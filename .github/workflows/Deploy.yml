@@ -1,4 +1,4 @@
-- name: Deploy Emergent AI Site
+      name: Deploy Emergent AI Site
 
       on: 
         push: 
