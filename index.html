@@ -3,18 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-    <!-- Links your styling -->
+    <title>My Emergent Site</title>
     <link rel="stylesheet" href="./app.css" />
     <link rel="stylesheet" href="./style.css" />
+    <script>
+      // Bypasses common development environment blocks in production
+      window.process = { env: { NODE_ENV: 'production' } };
+    </script>
   </head>
   <body>
-    <!-- The main mounting point for your React/Emergent site -->
+    <!-- Standard layout mounts for Emergent AI frameworks -->
     <div id="root"></div>
     <div id="app"></div>
 
-    <!-- Loads your project functionality -->
+    <!-- Main application runner -->
     <script type="module" src="./index.js"></script>
-    <script type="module" src="./app.js"></script>
-  </head>
+  </body>
 </html>
