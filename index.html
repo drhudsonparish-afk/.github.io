@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-    <link rel="stylesheet" href="./app.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <script>
-      window.process = { env: { NODE_ENV: 'production' } };
-    </script>
-  </head>
-  <body style="background: #0a0a0b; margin: 0;">
-    <div id="root"></div>
-    <div id="app"></div>
-    <script type="module" src="./index.js"></script>
-    <script type="module" src="./app.js"></script>
-  </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    
+    <!-- Link your original stylesheets -->
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- In-browser layout engine compilation scripts -->
+    <script src="https://unpkg.com"></script>
+    <script src="https://unpkg.com"></script>
+    <script src="https://unpkg.com"></script>
+    
+    <script>
+      window.process = { env: { NODE_ENV: 'production' } };
+    </script>
+  </head>
+  <body style="background: #0a0a0b; margin: 0;">
+    <!-- Main deployment mounting points -->
+    <div id="root"></div>
+    <div id="app"></div>
+
+    <!-- Tells the browser to compile the raw index code into visual assets -->
+    <script type="text/babel" data-presets="react" src="./index.js"></script>
+    <script type="text/babel" data-presets="react" src="./app.js"></script>
+  </body>
 </html>
